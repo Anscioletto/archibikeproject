@@ -6,8 +6,9 @@ import logo from "@/assets/archibike-logo.png";
 const links = [
   { label: "Models", href: "#models" },
   { label: "Technology", href: "#technology" },
-  { label: "Story", href: "#story" },
-  { label: "Contact", href: "#contact" },
+  { label: "Perché", href: "#perche" },
+  { label: "Recensioni", href: "#recensioni" },
+  { label: "B2B", href: "#b2b" },
 ];
 
 export default function Navbar() {
