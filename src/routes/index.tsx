@@ -5,6 +5,9 @@ import Hero from "@/components/archibike/Hero";
 import Models from "@/components/archibike/Models";
 import Technology from "@/components/archibike/Technology";
 import Story from "@/components/archibike/Story";
+import WhyChoose from "@/components/archibike/WhyChoose";
+import B2B from "@/components/archibike/B2B";
+import Reviews from "@/components/archibike/Reviews";
 import Newsletter from "@/components/archibike/Newsletter";
 
 export const Route = createFileRoute("/")({
@@ -20,6 +23,9 @@ function Index() {
       <Models />
       <Technology />
       <Story />
+      <WhyChoose />
+      <Reviews />
+      <B2B />
       <Newsletter />
     </main>
   );
