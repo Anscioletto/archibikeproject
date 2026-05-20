@@ -3,9 +3,9 @@ import { Flame, Compass, Wrench } from "lucide-react";
 import storyBg from "@/assets/story-bg.jpg";
 
 const values = [
-  { icon: Flame, title: "Obsession", body: "Every weld, every weave, every line — questioned and remade until it sings." },
-  { icon: Compass, title: "Independence", body: "No license deals. No outsourcing. Designed and assembled under one roof." },
-  { icon: Wrench, title: "Craft", body: "Forty riders. Twelve engineers. Three machines a day. That's the math." },
+  { icon: Flame, title: "Ossessione", body: "Ogni saldatura, ogni trama, ogni linea — messa in discussione e rifatta finché non canta." },
+  { icon: Compass, title: "Indipendenza", body: "Nessuna licenza. Nessun outsourcing. Progettate e assemblate sotto lo stesso tetto." },
+  { icon: Wrench, title: "Artigianalità", body: "Quaranta rider. Dodici ingegneri. Tre macchine al giorno. Questi sono i numeri." },
 ];
 
 export default function Story() {
@@ -29,13 +29,13 @@ export default function Story() {
           transition={{ duration: 0.9 }}
           className="relative z-10 max-w-5xl px-6 text-center"
         >
-          <div className="text-xs font-display uppercase tracking-[0.4em] text-accent mb-8">· Brand Story</div>
+          <div className="text-xs font-display uppercase tracking-[0.4em] text-accent mb-8">· La Nostra Storia</div>
           <p className="font-display italic font-bold text-[clamp(2rem,5.5vw,4.5rem)] leading-[1.05]">
-            "We don't just build bikes.<br />
-            <span className="text-accent">We engineer emotions.</span>"
+            "Non costruiamo solo bici.<br />
+            <span className="text-accent">Progettiamo emozioni.</span>"
           </p>
           <footer className="mt-8 text-sm font-display uppercase tracking-widest text-muted-foreground">
-            — Marco Vannini, Founder
+            — Marco Vannini, Fondatore
           </footer>
         </motion.blockquote>
       </div>
