@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Building2, Store, Hotel, BarChart3, ArrowUpRight } from "lucide-react";
+import b2bHero from "@/assets/b2b-hero.jpg";
 
 const benefits = [
   { Icon: Building2, title: "Flotte Aziendali", body: "Bici per la mobilità dei tuoi dipendenti. Sconti a partire da 5 unità, manutenzione inclusa." },
@@ -28,6 +29,16 @@ export default function B2B() {
               <p>
                 Sei un rivenditore, un'azienda o un ente? Contattaci per un preventivo su misura e scopri le nostre tariffe riservate ai partner commerciali.
               </p>
+            </div>
+            <div className="relative overflow-hidden border border-border aspect-[16/9]">
+              <img
+                src={b2bHero}
+                alt="Officina ArchiBike"
+                loading="lazy"
+                width={1280}
+                height={896}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

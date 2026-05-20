@@ -14,9 +14,9 @@ export default function Newsletter() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7"
           >
-            <div className="text-xs font-display uppercase tracking-[0.4em] text-accent mb-4">· Stay In The Pack</div>
+            <div className="text-xs font-display uppercase tracking-[0.4em] text-accent mb-4">· Resta nel Gruppo</div>
             <h2 className="font-display font-black uppercase text-[clamp(2rem,5vw,4rem)] leading-[0.95]">
-              Drop In. <span className="text-stroke">Get Early Access.</span>
+              Iscriviti. <span className="text-stroke">Accesso anticipato.</span>
             </h2>
           </motion.div>
           <motion.form
@@ -29,14 +29,14 @@ export default function Newsletter() {
           >
             <input
               type="email"
-              placeholder="your@email.com"
+              placeholder="tua@email.com"
               className="flex-1 bg-background border border-border px-5 py-4 font-sans text-sm focus:outline-none focus:border-accent transition-colors"
             />
             <button
               type="submit"
               className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground font-display font-bold uppercase tracking-widest text-sm px-6 py-4 glow-accent"
             >
-              Subscribe <ArrowRight size={16} />
+              Iscriviti <ArrowRight size={16} />
             </button>
           </motion.form>
         </div>
@@ -51,7 +51,7 @@ export default function Newsletter() {
                 <span className="font-display font-black text-xl tracking-[0.2em]">ARCHIBIKE</span>
               </div>
               <p className="font-display uppercase tracking-widest text-xs text-muted-foreground max-w-sm">
-                Engineered Emotions. Made in Milan.
+                Emozioni Progettate. Made in Milano.
               </p>
             </div>
             <div className="flex items-center gap-5">
@@ -75,8 +75,8 @@ export default function Newsletter() {
             <div>© 2026 Archibike S.r.l.</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-foreground">Privacy</a>
-              <a href="#" className="hover:text-foreground">Terms</a>
-              <a href="#" className="hover:text-foreground">Press</a>
+              <a href="#" className="hover:text-foreground">Termini</a>
+              <a href="#" className="hover:text-foreground">Stampa</a>
             </div>
           </div>
         </div>

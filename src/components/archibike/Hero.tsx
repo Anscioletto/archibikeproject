@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import heroBike from "@/assets/hero-bike.jpg";
 
-const words = ["SPEED.", "POWER.", "DESIGN."];
+const words = ["VELOCITÀ.", "POTENZA.", "DESIGN."];
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -40,7 +40,7 @@ export default function Hero() {
             className="flex items-center gap-3 text-xs font-display uppercase tracking-[0.4em] text-muted-foreground"
           >
             <span className="h-px w-12 bg-accent" />
-            Premium Bicycles · Est. 2019
+            Biciclette Premium · Dal 2019
           </motion.div>
 
           <h1 className="font-display font-black uppercase leading-[0.85] tracking-tight">
@@ -82,8 +82,8 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="max-w-md text-muted-foreground text-base leading-relaxed"
           >
-            Hand-built carbon machines for those who refuse to coast.
-            Engineered in Milan, raced everywhere.
+            Macchine in carbonio costruite a mano per chi non si accontenta.
+            Progettate a Milano, corse ovunque.
           </motion.p>
 
           <motion.div
@@ -96,11 +96,11 @@ export default function Hero() {
               href="#models"
               className="group inline-flex items-center gap-3 bg-accent text-accent-foreground font-display font-bold uppercase tracking-widest px-8 py-4 text-sm glow-accent"
             >
-              Explore Models
+              Esplora i Modelli
               <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
             <a href="#story" className="font-display uppercase tracking-widest text-sm text-foreground/70 hover:text-foreground transition">
-              Our Story →
+              La Nostra Storia →
             </a>
           </motion.div>
         </div>
@@ -127,9 +127,9 @@ export default function Hero() {
       {/* ticker */}
       <div className="absolute bottom-0 inset-x-0 border-t border-border bg-background/40 backdrop-blur-sm z-10">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between text-xs font-display uppercase tracking-widest text-muted-foreground">
-          <span>↓ Scroll</span>
-          <span className="hidden sm:block">Milano · Italy</span>
-          <span>2026 Collection</span>
+          <span>↓ Scorri</span>
+          <span className="hidden sm:block">Milano · Italia</span>
+          <span>Collezione 2026</span>
         </div>
       </div>
     </section>
