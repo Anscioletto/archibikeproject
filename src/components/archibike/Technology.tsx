@@ -63,7 +63,7 @@ export default function Technology() {
                   <div className="absolute -top-20 left-0 font-display font-black text-[14rem] lg:text-[20rem] leading-none text-foreground/[0.04] select-none pointer-events-none">
                     {b.num}
                   </div>
-                  <div className="relative bg-card border border-border aspect-square overflow-hidden">
+                  <div className="relative aspect-square overflow-hidden">
                     <img
                       src={b.image}
                       alt={b.title}
@@ -72,9 +72,6 @@ export default function Technology() {
                       height={1024}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute top-4 left-4 text-xs font-display uppercase tracking-widest text-muted-foreground bg-background/70 backdrop-blur px-2 py-1">
-                      Sezione {b.num}
-                    </div>
                   </div>
                 </div>
                 <div className="lg:col-span-6 lg:px-8 space-y-6">
