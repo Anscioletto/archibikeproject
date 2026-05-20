@@ -13,7 +13,7 @@ export default function B2B() {
   return (
     <section id="b2b" className="relative py-32 lg:py-48 px-6 lg:px-12 bg-secondary/30 border-y border-border">
       <div className="max-w-[1600px] mx-auto">
-        <div className="grid lg:grid-cols-12 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-12 gap-12 mb-20">
           <div className="lg:col-span-7 space-y-8">
             <div className="text-xs font-display uppercase tracking-[0.4em] text-accent">· Soluzioni aziendali</div>
             <h2 className="font-display font-black uppercase text-[clamp(2.5rem,7vw,6rem)] leading-[0.9]">
@@ -30,23 +30,38 @@ export default function B2B() {
                 Sei un rivenditore, un'azienda o un ente? Contattaci per un preventivo su misura e scopri le nostre tariffe riservate ai partner commerciali.
               </p>
             </div>
+            <div className="relative overflow-hidden border border-border aspect-[16/9]">
+              <img
+                src={b2bHero}
+                alt="Officina ArchiBike"
+                loading="lazy"
+                width={1280}
+                height={896}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-5 relative overflow-hidden aspect-[4/5]"
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-5 bg-background border border-border p-8 lg:p-10 flex flex-col justify-between gap-8 self-start"
           >
-            <img
-              src={b2bHero}
-              alt="Officina ArchiBike"
-              loading="lazy"
-              width={1280}
-              height={896}
-              className="w-full h-full object-cover"
-            />
+            <div className="space-y-4">
+              <div className="text-xs font-display uppercase tracking-[0.4em] text-accent">· Parla con noi</div>
+              <p className="font-display text-2xl lg:text-3xl font-bold leading-tight">
+                Il nostro team commerciale è pronto ad ascoltarti e costruire insieme un'offerta personalizzata.
+              </p>
+            </div>
+            <a
+              href="mailto:b2b@archibike.it?subject=Richiesta partnership B2B"
+              className="group inline-flex items-center justify-center gap-3 bg-accent text-accent-foreground font-display font-bold uppercase tracking-widest px-6 py-4 text-sm glow-accent"
+            >
+              Contatta il team B2B
+              <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </a>
           </motion.div>
         </div>
 
@@ -66,28 +81,6 @@ export default function B2B() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-20 max-w-3xl mx-auto bg-background border border-border p-8 lg:p-12 flex flex-col items-center text-center gap-8"
-        >
-          <div className="space-y-4">
-            <div className="text-xs font-display uppercase tracking-[0.4em] text-accent">· Parla con noi</div>
-            <p className="font-display text-2xl lg:text-3xl font-bold leading-tight">
-              Il nostro team commerciale è pronto ad ascoltarti e costruire insieme un'offerta personalizzata.
-            </p>
-          </div>
-          <a
-            href="mailto:b2b@archibike.it?subject=Richiesta partnership B2B"
-            className="group inline-flex items-center justify-center gap-3 bg-accent text-accent-foreground font-display font-bold uppercase tracking-widest px-8 py-4 text-sm glow-accent"
-          >
-            Contatta il team B2B
-            <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-        </motion.div>
       </div>
     </section>
   );
