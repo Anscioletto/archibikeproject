@@ -75,10 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Archibike — Ride The Future" },
       { name: "description", content: "Premium electric, road and mountain bicycles. Engineered emotions, built for those who refuse to coast." },
       { property: "og:title", content: "Archibike — Ride The Future" },
-      { property: "og:description", content: "Premium electric, road and mountain bicycles. Engineered emotions." },
+      { property: "og:description", content: "Premium electric, road and mountain bicycles. Engineered emotions, built for those who refuse to coast." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Archibike — Ride The Future" },
+      { name: "twitter:description", content: "Premium electric, road and mountain bicycles. Engineered emotions, built for those who refuse to coast." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e576b537-eb66-416f-b17f-0d781b7d6d41/id-preview-2e5fa950--0a721425-519c-4d6b-b809-0cdc56ce8716.lovable.app-1779260142912.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e576b537-eb66-416f-b17f-0d781b7d6d41/id-preview-2e5fa950--0a721425-519c-4d6b-b809-0cdc56ce8716.lovable.app-1779260142912.png" },
     ],
     links: [
       {
